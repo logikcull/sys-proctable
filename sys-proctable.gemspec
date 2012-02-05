@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.platform   = Gem::Platform::CURRENT # Probably altered by Rake task
   spec.summary    = 'An interface for providing process table information'
   spec.test_files = ['test/test_sys_proctable_all.rb']
+  spec.require_paths = ['lib', 'lib/windows']
    
   # Additional files for your platform are added by the 'rake gem' task.
   spec.files = [
@@ -21,7 +22,11 @@ Gem::Specification.new do |spec|
     'MANIFEST',
     'Rakefile',
     'README',
-    'sys-proctable.gemspec'
+    'sys-proctable.gemspec',
+    'test/test_sys_proctable_all.rb',
+    'doc/top.txt',
+    'lib/windows/sys/proctable.rb',
+    'test/test_sys_proctable_windows.rb'
   ]
 
   spec.rubyforge_project = 'sysutils'
